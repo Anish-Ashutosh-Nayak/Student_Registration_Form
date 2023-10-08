@@ -1,0 +1,156 @@
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    min-height: 100vh;
+    background: #005C97;  /* fallback for old browsers */
+    background: -webkit-linear-gradient(to right, #363795, #005C97);  /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(to right, #363795, #005C97); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.container {
+    max-width: 900px;
+    width: 100%;
+    background-color: white;
+    font-family: 'Poppins', sans-serif;
+    padding: 30px;
+    border-radius: 10px;
+    box-shadow: 0 3px 10px black;
+}
+
+h2 {
+    margin-top: 25px;
+}
+
+.container form {
+    position: relative;
+    min-height: 500px;
+}
+
+.container form .block {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+.inputBox {
+    width: calc(100% / 3 - 15px);
+    margin: 5px 0;
+    display: flex;
+    flex-direction: column;
+}
+
+.inputBox label {
+    font-size: 16px;
+    font-weight: 600;
+}
+
+.inputBox input , select{
+    height: 40px;
+    padding: 0 15px;
+    margin: 8px 0;
+    outline: none;
+    border: 1px solid darkgray;
+    border-radius: 5px;
+    font-size: 15px;
+    font-weight: 400;
+    font-family: 'Poppins', sans-serif;
+    transition: all 0.3s linear;
+    cursor: pointer;
+}
+
+input:hover {
+    border: 2px solid black;
+}
+
+select:hover {
+    border: 2px solid black;
+}
+
+
+.enter {
+    background-color: white;
+    height: 40px;
+    border: 1px solid darkgray;
+    border-radius: 5px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    transition: all 0.3s linear;
+}
+
+.enter:hover {
+    border: 2px solid black;
+}
+
+.enter .grid {
+    display: flex;
+    align-items: center;
+}
+
+.enter input {
+    font-size: 15px;
+}
+
+.inputBox textarea {
+    height: 40px;
+    outline: none;
+    border: 1px solid darkgray;
+    border-radius: 5px;
+    font-size: 15px;
+    font-weight: 400;
+    font-family: 'Poppins', sans-serif;
+    resize: none;
+    padding: 0 15px;
+    transition: all 0.3s linear;
+}
+
+textarea:hover {
+    border: 2px solid black;
+}
+
+button {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 15px;
+    font-weight: 500;
+    height: 45px;
+    width: 100%;
+    max-width: 200px;
+    border: none;
+    border-radius: 5px;
+    outline: none;
+    margin-top: 25px;
+    color: white;
+    background-color: #333399;
+    font-family: 'Poppins', sans-serif;
+    transition: all 0.3s linear;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: darkblue;
+}
+
+@media (max-width: 768px) {
+    .inputBox {
+        width: calc(100% / 2 - 15px);
+    }
+}
+
+@media (max-width: 640px) {
+    .container {
+        border-radius: 0;
+    }
+    .inputBox {
+        width: calc(100% / 1 - 15px);
+    }
+}
