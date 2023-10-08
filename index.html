@@ -1,0 +1,102 @@
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Registration</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins&display=swap" rel="stylesheet">
+</head>
+
+<body>
+    <div class="container">
+        <div class="header">
+            <center><h1>Student Registration Form</h1></center>
+        </div>
+        <form action="#">
+            <h2>Personal Details</h2>
+            <div class="block">
+                <div class="inputBox">
+                    <label for="rollNO">Roll number</label>
+                    <input type="text" placeholder="Enter roll number" required>
+                </div>
+                <div class="inputBox">
+                    <label for="firstname">Firstname</label>
+                    <input type="text" placeholder="Enter your firstname" required>
+                </div>
+                <div class="inputBox">
+                    <label for="lastName">Lastname</label>
+                    <input type="text" placeholder="Enter your lastname" required>
+                </div>
+                <div class="inputBox">
+                    <label for="mob">Mobile number</label>
+                    <input type="number" placeholder="Enter mobile number" required>
+                </div>
+                <div class="inputBox">
+                    <label for="mail">Email</label>
+                    <input type="email" placeholder="Enter email" required>
+                </div>
+                <div class="inputBox">
+                    <label for="dob">Date of birth</label>
+                    <input type="date">
+                </div>
+            </div>
+            <h2>Other Details</h2>
+            <div class="block">
+                <div class="inputBox">
+                    <label for="gender">Gender</label>
+                    <div class="enter">
+                        <div class="grid">
+                            <input type="radio" name="gender" id="male">
+                            <label for="male">Male</label>
+                        </div>
+                        <div class="grid">
+                            <input type="radio" name="gender" id="female">
+                            <label for="female">Female</label>
+                        </div>
+                        <div class="grid">
+                            <input type="radio" name="gender" id="other">
+                            <label for="other">Other</label>
+                        </div>
+                    </div>
+
+                </div>
+                <div class="inputBox">
+                    <label for="course">Course</label>
+                    <select name="course" id="select">
+                        <option value="">B.Tech CSE</option>
+                        <option value="">B.Tech IT</option>
+                        <option value="">B.Sc CS(H)</option>
+                        <option value="">B.Com (Specialized)</option>
+                        <option value="" selected>BCA</option>
+                        <option value="">BBA</option>
+                    </select>
+                </div>
+                <div class="inputBox">
+                    <label for="fav-color">Favourite color</label>
+                    <input type="color" style="width: 100%;">
+                </div>
+                <div class="inputBox">
+                    <label for="address">City</label>
+                    <textarea name="" id="" cols="" rows="" placeholder="Enter street and city name"></textarea>
+                </div>
+                <div class="inputBox">
+                    <label for="address">State</label>
+                    <textarea name="" id="" cols="" rows="" placeholder="Enter state name"></textarea>
+                </div>
+                <div class="inputBox">
+                    <label for="address">Country</label>
+                    <textarea name="" id="" cols="" rows="" placeholder="Enter country name"></textarea>
+                </div>
+            </div>
+            <button type="submit">Submit</button>
+        </form>
+    </div>
+</body>
+
+</html>
